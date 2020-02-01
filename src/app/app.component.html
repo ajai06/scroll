@@ -1,0 +1,29 @@
+<div class="ml-3" appCustomScroll #appScrollElement="appCustomScroll"
+   style="height:400px; width: 500px; overflow-y:auto;" #scroll  #scrollMe [scrollTop]="scrollMe.scrollHeight">
+  <p >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Proin nisi turpis, ultricies in leo vitae, ullamcorper pharetra risus.
+      Morbi ut fringilla erat, id luctus mauris. Praesent tempor nunc sit amet tempus porttitor.
+       Cras vestibulum sem ut ante dictum, non finibus augue consequat. In faucibus orci viverra dol
+       or pretium bibendum. Maecenas<button class="btn btn-danger" (click)="send()">Click Me</button> laoreet tortor non turpis elementum, vel imperdiet neque facilisis.
+        Aliquam ac ullamcorper lectus, eu pulvinar massa. Vestibulum feugiat interdum metus. Quisque eget 
+        sollicitudin turpis. Quisque et sagittis velit. Pellentesque accumsan placerat sem quis congue. C
+        ras pulvinar ullamcorper tortor non venenatis. Aliquam sit amet luctus quam. Nam porta tempus
+         lacus in placerat. Cras at sollicitudin eros.
+  
+  Nam porta orci sed enim imperdiet, et vulputate erat luctus. Integer a tortor blandit, e
+  leifend velit id, eleifend libero. Quisque quis congue ex, vitae suscipit ipsum. Aliquam 
+  felis enim, bibendum vel dolor et, dapibus fringilla felis. Sed magna ipsum, congue molestie
+   nisl non, commodo pellentesque felis. Mauris hendrerit rhoncus turpis, at lacinia metus finibus e
+   get. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    Aliquam ligula risus, tincidunt ac diam vehicula, fringilla blandit sapien. Ut dictum a nunc id tempus.
+     Nulla sed felis id quam hendrerit volutpat eget at velit. Praesent finibus, mauris ac molestie laoreet, 
+     erat est mattis velit, ac tincidunt nulla enim ac felis. In hac habitasse platea dictumst. Nam neque nibh, 
+     tempus a velit a, porttitor finibus quam. Nunc pharetra est eget urna mollis, sed facilisis eros pulvinar. 
+     Duis ac metus egestas, malesuada ligula eu, congue magna.
+  </p>
+  
+  <button class="btn btn-primary btns" *ngIf="!appScrollElement.disableBtn && appScrollElement.isScroll && appScrollElement.scroller" (click)="SearchPosition(1)">Up</button>
+  <button class="btn btn-success btns" *ngIf="appScrollElement.disableBtn && appScrollElement.isScroll && appScrollElement.scroller" (click)="SearchPosition(0)">Down</button>
+  
+</div>

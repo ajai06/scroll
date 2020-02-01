@@ -1,0 +1,5 @@
+.btns{
+    z-index: 1;
+    bottom: 10px;
+    position: sticky;
+}
