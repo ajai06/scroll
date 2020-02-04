@@ -10,7 +10,9 @@ export class AppComponent  {
   @ViewChild('scroll', { static: false }) public scroll: ElementRef<any>;
 
 
-  value: 'hello from component';
+   value =  'hello from component';
+
+  inputData = {};
 
   public SearchPosition(type) {
     if (type === 1) {
@@ -22,5 +24,9 @@ export class AppComponent  {
 
   send() {
     console.log('clicked');
+    const obj = {
+      event : this.value,
+    }
+    this.inputData = {...obj}
   }
 }

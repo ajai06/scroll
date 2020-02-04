@@ -1,4 +1,4 @@
-import { Directive, HostListener, ElementRef } from '@angular/core';
+import { Directive, HostListener, ElementRef, Input } from '@angular/core';
 
 @Directive({
   selector: '[appCustomScroll]',
@@ -14,7 +14,13 @@ export class CustomScrollDirective {
     scroller = false;
     constructor(private eleRef: ElementRef) {}
 
+    @Input('clickEvent') 
+    set clickEvent(value){
 
+      console.log(value);
+
+    }
+    
     @HostListener('scroll', ['$event']) onScroll(event) {
 
       this.isScroll = true;
