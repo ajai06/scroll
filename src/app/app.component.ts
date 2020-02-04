@@ -32,6 +32,6 @@ export class AppComponent  {
   }
   
   xyz() {
-    
+    console.log('this click');
   }
 }
