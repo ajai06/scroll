@@ -24,9 +24,14 @@ export class AppComponent  {
 
   send() {
     console.log('clicked');
+    this.xyz();
     const obj = {
       event : this.value,
     }
     this.inputData = {...obj}
+  }
+  
+  xyz() {
+    
   }
 }
