@@ -4,7 +4,7 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
   selector: '[appCustomScroll]',
   exportAs: 'appCustomScroll'
 })
-export class CustomScrollDirective implements OnInit {
+export class CustomScrollDirective {
 
     disableBtn = true;
     isScroll = false;
